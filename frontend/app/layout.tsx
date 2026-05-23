@@ -4,7 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Sidebar from '@/components/layout/Sidebar';
 
 export const metadata: Metadata = {
-  title: 'Zeus – Video Calls & Conferencing',
+  title: 'ZoomCall – Video Calls & Conferencing',
   description:
     'Professional video conferencing app. Start instant meetings, schedule sessions, and collaborate with your team.',
 };

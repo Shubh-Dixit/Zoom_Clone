@@ -66,7 +66,7 @@ export default function Sidebar() {
 
       {/* Versión en la parte inferior */}
       <div className="px-5 py-4 border-t border-gray-100">
-        <p className="text-xs text-gray-400">Zeus v2.0 · Zoom Clone</p>
+        <p className="text-xs text-gray-400">ZoomCall v2.0</p>
       </div>
     </aside>
   );

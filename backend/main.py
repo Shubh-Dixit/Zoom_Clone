@@ -37,8 +37,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Zeus API",
-    description="Backend para el clon de Zoom — Zeus Video Conferencing",
+    title="ZoomCall API",
+    description="Backend para el clon de Zoom — ZoomCall Video Conferencing",
     version="2.0.0",
     lifespan=lifespan,
 )
@@ -60,7 +60,7 @@ app.include_router(scheduled_router)
 @app.get("/api/health")
 def health_check():
     """Endpoint de salud para verificar que el servidor está corriendo."""
-    return {"status": "ok", "service": "Zeus API v2"}
+    return {"status": "ok", "service": "ZoomCall API v2"}
 
 
 # Montar Socket.IO como ASGI sub-aplicación en /ws

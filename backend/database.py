@@ -11,7 +11,7 @@ load_dotenv()
 
 # Resolver la ruta absoluta para SQLite — evita problemas con CWD en Render
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-_DEFAULT_DB = f"sqlite:///{os.path.join(_BASE_DIR, 'zeus.db')}"
+_DEFAULT_DB = f"sqlite:///{os.path.join(_BASE_DIR, 'zoomcall.db')}"
 
 DATABASE_URL = os.getenv("DATABASE_URL", _DEFAULT_DB)
 

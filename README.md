@@ -1,4 +1,4 @@
-# Zeus — Zoom Web App Clone
+# ZoomCall — Zoom Web App Clone
 
 A professional video conferencing app built as a university assignment. Visually and functionally inspired by Zoom.
 
@@ -14,7 +14,7 @@ A professional video conferencing app built as a university assignment. Visually
 ## Project Structure
 
 ```
-Zeus/
+ZoomCall/
 ├── backend/          ← FastAPI server
 │   ├── main.py       ← Entry point (FastAPI + Socket.IO)
 │   ├── database.py   ← SQLite engine

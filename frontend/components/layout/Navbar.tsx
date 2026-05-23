@@ -18,7 +18,7 @@ export default function Navbar() {
               <path d="M4 6C4 4.9 4.9 4 6 4h8c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6zm12 1.5l4-2.5v10l-4-2.5V7.5z" />
             </svg>
           </div>
-          <span className="font-bold text-lg text-gray-900 tracking-tight">zeus</span>
+          <span className="font-bold text-lg text-gray-900 tracking-tight">zoomcall</span>
         </div>
       </div>
 
