@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* 
+  Tailwind v4: los tokens de diseño se definen en @theme, 
+  no en tailwind.config.ts
+*/
+@theme {
+  --color-zoom-blue: #0E71EB;
+  --color-zoom-blue-dark: #0A5FD4;
+  --color-zoom-blue-light: #3B8FF7;
+  --color-zoom-blue-hover: #1A7FF5;
+  --color-zoom-orange: #F26D21;
+  --color-zoom-dark: #1C1C1E;
+  --color-zoom-dark-2: #2C2C2E;
+  --color-zoom-dark-3: #3A3A3C;
+  --color-zoom-gray: #8E8E93;
+  --color-zoom-gray-light: #C7C7CC;
+  --color-zoom-gray-bg: #F2F2F7;
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+
+  --animate-fade-in: fadeIn 0.2s ease-in-out;
+  --animate-slide-up: slideUp 0.3s ease-out;
+  --animate-pulse-soft: pulseSoft 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideUp {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+:root {
+  --sidebar-width: 220px;
+  --navbar-height: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F2F2F7;
+  color: #1C1C1E;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar personalizado estilo macOS */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7C7CC;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8E8E93;
+}
+
+/* Animación de skeleton loader */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #e8e8ed 25%, #f2f2f7 50%, #e8e8ed 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
